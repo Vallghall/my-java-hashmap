@@ -33,6 +33,11 @@ public class MyHashMap <K,V> {
             return;
         }
 
+        if (n.key.equals(key)) {
+            n.value = value;
+            return;
+        }
+
         while (n.next != null) {
             if (n.next.key.equals(key)) {
                 n.next.value = value;

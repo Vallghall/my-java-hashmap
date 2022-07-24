@@ -6,10 +6,13 @@ public class Main {
     public static void main(String[] args) {
         MyHashMap<A, String> map = new MyHashMap<A, String>();
         map.put(new A("Roman"), "Hello");
-        map.remove(new A("Roman"));
         System.out.println(map.get(new A("Roman")));
+        map.put(new A("Roman"), "Howdy");
+        //map.remove(new A("Roman"));
+        System.out.println(map.get(new A("Roman")));
+        System.out.println(map.get(new A("Ravi")));
         map.put(new A("Ravi"), "Hi");
-
+        map.get(new A("Roa"));
         map.put(new A("Ranni"), "Greetings");
         System.out.println(map.get(new A("Ravi")));
         System.out.println(map.get(new A("Ranni")));
